@@ -1,11 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'ubuntu'
-      args 'latest'
-    }
-    
-  }
+  agent any
   stages {
     stage('Push to Dev') {
       steps {
